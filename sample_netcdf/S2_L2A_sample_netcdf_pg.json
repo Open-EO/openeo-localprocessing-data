@@ -1,0 +1,40 @@
+{
+  "process_graph": {
+    "loadcollection1": {
+      "process_id": "load_collection",
+      "arguments": {
+        "bands": [
+          "B04",
+          "B03",
+          "B02",
+          "B08",
+          "SCL"
+        ],
+        "id": "SENTINEL2_L2A_SENTINELHUB",
+        "properties": {},
+        "spatial_extent": {
+          "east": 11.400685010702237,
+          "north": 46.52293027116929,
+          "south": 46.461999642207644,
+          "west": 11.281637599107066
+        },
+        "temporal_extent": [
+          "2022-06-12",
+          "2022-06-13"
+        ]
+      }
+    },
+    "saveresult1": {
+      "process_id": "save_result",
+      "arguments": {
+        "data": {
+          "from_node": "loadcollection1"
+        },
+        "format": "GTiff",
+        "options": {}
+      },
+      "result": true
+    }
+  },
+  "parameters": []
+}
