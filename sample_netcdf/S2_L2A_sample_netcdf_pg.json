@@ -1,7 +1,6 @@
 {
   "process_graph": {
     "loadcollection1": {
-      "process_id": "load_collection",
       "arguments": {
         "bands": [
           "B04",
@@ -19,22 +18,22 @@
           "west": 11.281637599107066
         },
         "temporal_extent": [
-          "2022-06-12",
-          "2022-06-13"
+          "2022-06-01",
+          "2022-07-01"
         ]
-      }
+      },
+      "process_id": "load_collection"
     },
     "saveresult1": {
-      "process_id": "save_result",
       "arguments": {
         "data": {
           "from_node": "loadcollection1"
         },
-        "format": "GTiff",
+        "format": "netCDF",
         "options": {}
       },
+      "process_id": "save_result",
       "result": true
     }
-  },
-  "parameters": []
+  }
 }

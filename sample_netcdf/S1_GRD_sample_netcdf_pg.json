@@ -1,0 +1,36 @@
+{
+  "process_graph": {
+    "loadcollection1": {
+      "arguments": {
+        "bands": [
+          "VH",
+          "VV"
+        ],
+        "id": "S1_GRD_SIGMA0_ASCENDING",
+        "properties": {},
+        "spatial_extent": {
+          "east": 11.515781306269753,
+          "north": 46.585780903684366,
+          "south": 46.40404245551758,
+          "west": 11.196523239927902
+        },
+        "temporal_extent": [
+          "2022-06-01",
+          "2022-07-01"
+        ]
+      },
+      "process_id": "load_collection"
+    },
+    "saveresult1": {
+      "arguments": {
+        "data": {
+          "from_node": "loadcollection1"
+        },
+        "format": "netCDF",
+        "options": {}
+      },
+      "process_id": "save_result",
+      "result": true
+    }
+  }
+}
